@@ -1,13 +1,7 @@
 import React from 'react'
 
 function Story({campaign}) {
-    
-    {/* <strong>{campaign.employer}</strong>
-    <strong>{campaign.item}</strong>
-    <strong>{campaign.antagonist}</strong>
-    <strong>{campaign.setting}</strong>
-    <strong>{campaign.dungeon}</strong> */}
- 
+     
             const murderMyster=()=>{
                 const story = 
                 <div>
@@ -23,14 +17,27 @@ function Story({campaign}) {
                 return story
             }
             const dragonSchemes=()=>{
-                const story = <div>under construction</div>
+                const story = <div>No dragon adventures yet :/ </div>
                 return story
             }
             const bounty=()=>{
-                const story = <div>
-                    There is a bounty on the {campaign.antagonist} offerd by {campaign.employer} and there is a reward, specifially the {campaign.item} they are offering as reward looks really intresting. they can find the {campaign.antagonist} in the nearby {campaign.dungeon}
-                </div>
+                let story =""
+                if(campaign.employer !== campaign.antagonist){
+                    story = 
+                    <div>
+                        A There is a bounty on the {campaign.antagonist} offerd by {campaign.employer} and there is a reward, specifially the {campaign.item} they are offering as reward looks really intresting. they can find the {campaign.antagonist} hiding in the nearby {campaign.dungeon}
+                    </div>
+                    return story
+                }
+
+                if(campaign.employer === campaign.antagonist){
+                    story = <div>
+                        the group have been asked to protect {campaign.employer} while they try to travle to the nearby {campaign.setting}. their only defens is a {campaign.item}. why do they have a bounty...maybe they will tell during their travle.
+                    </div>
+                    return story
+                }
                 return story
+                
             }
             
 
