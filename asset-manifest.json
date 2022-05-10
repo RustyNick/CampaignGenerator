@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/https//RustyNick/.github.io/CampaignGenerator/static/css/main.dcde91eb.css",
-    "main.js": "/https//RustyNick/.github.io/CampaignGenerator/static/js/main.c00dc17b.js",
-    "index.html": "/https//RustyNick/.github.io/CampaignGenerator/index.html",
-    "main.dcde91eb.css.map": "/https//RustyNick/.github.io/CampaignGenerator/static/css/main.dcde91eb.css.map",
-    "main.c00dc17b.js.map": "/https//RustyNick/.github.io/CampaignGenerator/static/js/main.c00dc17b.js.map"
+    "main.css": "/.github.io/CampaignGenerator/static/css/main.dcde91eb.css",
+    "main.js": "/.github.io/CampaignGenerator/static/js/main.c00dc17b.js",
+    "index.html": "/.github.io/CampaignGenerator/index.html",
+    "main.dcde91eb.css.map": "/.github.io/CampaignGenerator/static/css/main.dcde91eb.css.map",
+    "main.c00dc17b.js.map": "/.github.io/CampaignGenerator/static/js/main.c00dc17b.js.map"
   },
   "entrypoints": [
     "static/css/main.dcde91eb.css",
