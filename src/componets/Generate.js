@@ -9,8 +9,8 @@ import GenerateButton from './GenerateButton'
 
 function Generate() {
     const[campaign, setCampaign] = useState({item:"",employer:"", antagonist:"", setting:"", dungeon:""})
-    
     const[jump,setJump] = useState(false)
+    const [showCampaign,setShowCampaign] = useState(false)
 
     
     const animate =()=>{
@@ -43,9 +43,9 @@ function Generate() {
   return (
     <div className='container viewPage__inner ' >
         <div className='container container__center' >
-          <GenerateButton action={randomCampaign} animate={animate} />
+          <GenerateButton action={randomCampaign} animate={animate} setCampaign={setCampaign} setShowCampaign={setShowCampaign} />
         </div>
-        {(isCampaign !== "") ? (<Result campaign={campaign} jump={jump}/>):("Nothing to show")}
+        {(isCampaign !== "") ? (<Result showCampaign={showCampaign} setShowCampaign={setShowCampaign} campaign={campaign} jump={jump}/>):("")}
        
         
     </div>

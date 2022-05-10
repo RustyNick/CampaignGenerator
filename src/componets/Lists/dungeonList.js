@@ -5,5 +5,6 @@ export const dungeonList = [
     "City",
     "village",
     "Mansion",
-    "Resort island"
+    "Resort island",
+    "Forest",
 ]

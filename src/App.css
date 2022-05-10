@@ -22,6 +22,7 @@ h1{
 }
 
 button{
+  width: 100%;
   font-size: 2em;
   transition: 0.4s;
   background-color: #888;
@@ -34,13 +35,20 @@ button:active{
 }
 
 button:hover{
-  opacity: 50%;
+  opacity: 70%;
 }
 
 .button__generate{
   width: 100%;
-  min-width:460px;
   padding:10px 16px;
+  border:unset;
+  border-radius: 5px;
+}
+
+.button__example{
+  width: 100%;
+  font-size: 1rem;
+  padding:5px 5px;
   border:unset;
   border-radius: 5px;
 }
@@ -51,7 +59,11 @@ button:hover{
   display: flex;
   flex-direction: column;
 }
-
+.container__story{
+padding:10px 0px;
+display: flex;
+flex-wrap: wrap;
+}
 .container__center{
   display: flex;
   justify-content: center;
@@ -70,8 +82,7 @@ button:hover{
 }
 
 .container__result{
-  width: 100%;
-  min-width:400px;
+  width:100%;
   padding:5px;
   display:flex;
   justify-content: space-between;
@@ -96,7 +107,7 @@ button:hover{
 
 
 .viewPage{
-  max-width: 600px;
+  width:600px;
   padding:10px;
   background:linear-gradient(to top left,rgb(238, 255, 0), rgb(207, 5, 5),rgb(238, 255, 0));
   border-radius: 5px;
@@ -111,8 +122,7 @@ button:hover{
 @media only screen and (max-width: 600px) {
   
     .viewPage{
-      max-width:100%;
-      min-width:90%;
+      width: 90%;
     }
     
     .button__generate{

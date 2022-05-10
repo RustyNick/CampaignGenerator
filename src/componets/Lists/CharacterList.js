@@ -2,7 +2,10 @@ export const CharacterList = [
     'Queen',
     "King",
     "Bard",
-    "General",
+    "Knight",
+    "Maiden",
+    "Weapon smith",
+    "Librarian",
     "Taverns Maid",
     "Taverns Owner",
 ]

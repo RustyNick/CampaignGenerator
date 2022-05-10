@@ -1,9 +1,12 @@
 import React from 'react'
 
-function GenerateButton({action, animate}) {
+function GenerateButton({action, animate, setCampaign, setShowCampaign}) {
 
     const handleclick =()=>{
-       setTimeout(()=> action(),500)
+      setShowCampaign(false)
+      setCampaign({item:"",employer:"", antagonist:"", setting:"", dungeon:""})
+      action()
+       /* setTimeout(()=> action(),2000) */
         animate()
     }
 

@@ -1,5 +1,8 @@
 export const weaponList = [
     "sword",
     "Axe",
-    "Mace"
+    "Mace",
+    "Dagger",
+    "Rapier",
+    "Spear",
 ]

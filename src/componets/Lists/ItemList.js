@@ -4,4 +4,5 @@ export const itemList = [
     "skull",
     "mask",
     "weapon",
+    "Book",
 ]
