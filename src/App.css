@@ -79,6 +79,7 @@ button:hover{
 }
 
 .container__result__bold{
+  text-align: right;
   font-family:Arial, Helvetica, sans-serif;
   padding-left:10px;
 }
@@ -105,4 +106,20 @@ button:hover{
   padding:10px;
   background-color:#FFF;
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  
+    .viewPage{
+      max-width:100%;
+      min-width:90%;
+    }
+    
+    .button__generate{
+      min-width:100%;
+    }
+
+    .container__result{
+      min-width:100%;
+    }
 }
