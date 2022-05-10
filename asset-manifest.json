@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/CampaignGenerator/static/css/main.dcde91eb.css",
+    "main.css": "/CampaignGenerator/static/css/main.cb6bbfc5.css",
     "main.js": "/CampaignGenerator/static/js/main.c00dc17b.js",
     "index.html": "/CampaignGenerator/index.html",
-    "main.dcde91eb.css.map": "/CampaignGenerator/static/css/main.dcde91eb.css.map",
+    "main.cb6bbfc5.css.map": "/CampaignGenerator/static/css/main.cb6bbfc5.css.map",
     "main.c00dc17b.js.map": "/CampaignGenerator/static/js/main.c00dc17b.js.map"
   },
   "entrypoints": [
-    "static/css/main.dcde91eb.css",
+    "static/css/main.cb6bbfc5.css",
     "static/js/main.c00dc17b.js"
   ]
 }
