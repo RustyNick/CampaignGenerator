@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  color:black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.padding__30{
+  padding:30px;
+}
+
+button{
+  font-size: 2em;
+  transition: 0.4s;
+  background-color: #888;
+  color:#FFF;
+}
+
+button:active{
+  color:green;
+  background-color: rgb(140, 255, 140);
+}
+
+button:hover{
+  opacity: 50%;
+}
+
+.button__generate{
+  width: 100%;
+  min-width:460px;
+  padding:10px 16px;
+  border:unset;
+  border-radius: 5px;
+}
+
+
+.container{
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.container__center{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.container__marginTop{
+  margin-top: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container__content{
+  margin-top: 30px;
+  padding:10px;
+  background-color: rgb(39, 119, 161);
+  border-radius: 5px;
+}
+
+.container__result{
+  width: 100%;
+  min-width:400px;
+  padding:5px;
+  display:flex;
+  justify-content: space-between;
+  color:#fff;
+}
+
+.container__result__bold{
+  font-family:Arial, Helvetica, sans-serif;
+  padding-left:10px;
+}
+
+.header{
+
+  background-color:  rgb(207, 5, 5);
+  box-shadow: 0px -5px 10px 5px black;
+}
+
+.header h1{
+  color: #fff;
+}
+
+
+.viewPage{
+  max-width: 600px;
+  padding:10px;
+  background:linear-gradient(to top left,rgb(238, 255, 0), rgb(207, 5, 5),rgb(238, 255, 0));
+  border-radius: 5px;
+}
+
+.viewPage__inner{
+  padding:10px;
+  background-color:#FFF;
+  border-radius: 5px;
 }

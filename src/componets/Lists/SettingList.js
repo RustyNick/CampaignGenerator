@@ -1,0 +1,1 @@
+export const settingList = ['Murder mystery',"Unholy ritual","Dragon schemes","Bounty"]
