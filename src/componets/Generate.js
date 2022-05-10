@@ -5,10 +5,21 @@ import{itemList} from './Lists/ItemList'
 import {settingList} from './Lists/SettingList'
 import { dungeonList } from './Lists/dungeonList'
 import {weaponList} from './Lists/weaponList'
+import GenerateButton from './GenerateButton'
 
 function Generate() {
     const[campaign, setCampaign] = useState({item:"",employer:"", antagonist:"", setting:"", dungeon:""})
     
+    const[jump,setJump] = useState(false)
+
+    
+    const animate =()=>{
+      setJump(true);
+
+      setTimeout(() => setJump(false), 500)
+    }
+
+
     const randomizer =(list)=>{
         const randomList = list[Math.floor(Math.random()*list.length)]
         if(randomList === "weapon"){
@@ -32,9 +43,9 @@ function Generate() {
   return (
     <div className='container viewPage__inner ' >
         <div className='container container__center' >
-        <button className='button__generate' onClick={randomCampaign} >Generate</button>
+          <GenerateButton action={randomCampaign} animate={animate} />
         </div>
-        {(isCampaign !== "") ? (<Result campaign={campaign}/>):("Nothing to show")}
+        {(isCampaign !== "") ? (<Result campaign={campaign} jump={jump}/>):("Nothing to show")}
        
         
     </div>

@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       
       <Header/>
-      <div className='container__center container__marginTop ' >
+      <div className='container__center container__marginTop' >
       <ViewPage/>
       </div>
       
